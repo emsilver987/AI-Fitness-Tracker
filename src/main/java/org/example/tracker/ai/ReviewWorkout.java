@@ -2,7 +2,7 @@ package org.example.tracker.ai;
 import org.example.tracker.models.Workout;
 import static org.example.tracker.Main.workoutHistory;
 
-public class reviewWorkout {
+public class ReviewWorkout {
 
     public static void getRecommendations() {
         if (workoutHistory.isEmpty()) {
