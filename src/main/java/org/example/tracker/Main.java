@@ -1,6 +1,7 @@
 package org.example.tracker;
 import org.example.tracker.ai.ReviewWorkout;
 import org.example.tracker.models.Workout;
+import org.example.tracker.services.UserService;
 import org.example.tracker.services.WorkoutService;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -15,6 +16,8 @@ public class Main {
         while (running) {
             Print print = new Print();
             WorkoutService workout = new WorkoutService();
+            UserService user = new UserService();
+
             print.printMenu();
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -22,7 +25,7 @@ public class Main {
                 case 1 -> workout.logWorkout();
                 case 2 -> workout.viewWorkouts();
                 case 3 -> ReviewWorkout.getRecommendations();
-                //case 4 ->
+                case 4 -> user.createProfile();
                 case 5 -> running = false;
                 default -> print.invalidInput();
             }
