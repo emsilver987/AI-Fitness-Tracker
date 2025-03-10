@@ -40,7 +40,6 @@ public class User {
                 sb.append(workout.toString()).append("\n");
             }
         }
-
         return sb.toString();
     }
 

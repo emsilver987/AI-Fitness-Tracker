@@ -1,7 +1,6 @@
 package org.example.tracker.services;
 import org.example.tracker.models.User;
-
-import java.time.LocalDate;
+import org.example.tracker.utils.UserProfile;
 import java.util.Scanner;
 
 import static org.example.tracker.Main.workoutHistory;
@@ -26,6 +25,7 @@ public class UserService {
 
         User user = new User(name, bodyWeight, bodyfatpercentage, workoutHistory, goal);
         System.out.println("Profile Created successfully!");
+        UserProfile.saveUserProfile(user);
         return user;
     }
 }
