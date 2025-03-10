@@ -34,6 +34,11 @@ public class UserProfile {
         System.out.println("Please enter your profile name: ");
         String name = scanner.nextLine();
 
+        if (checkUserProfileExists(name)){
+            User user = loadUserProfile(name);
+            return user;
+        }
+
         System.out.print("Enter your body weight (in lbs): ");
         double weight = scanner.nextDouble();
 
@@ -43,8 +48,6 @@ public class UserProfile {
 
         System.out.print("Enter your goal (Strength/Hypertrophy/Fat Loss): ");
         String goal = scanner.nextLine();
-
-        //How can I make sure my ArrayList is put through?
 
         User user = new User(name, weight, bodyFat, workoutHistory, goal);
         UserProfile.saveUserProfile(user);
