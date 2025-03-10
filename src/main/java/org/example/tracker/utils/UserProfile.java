@@ -17,6 +17,8 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static org.example.tracker.Main.workoutHistory;
+
 public class UserProfile {
     private static final String PROFILE_DIR = "profiles";
 
@@ -42,7 +44,9 @@ public class UserProfile {
         System.out.print("Enter your goal (Strength/Hypertrophy/Fat Loss): ");
         String goal = scanner.nextLine();
 
-        User user = new User(name, weight, bodyFat, new ArrayList<>(), goal);
+        //How can I make sure my ArrayList is put through?
+
+        User user = new User(name, weight, bodyFat, workoutHistory, goal);
         UserProfile.saveUserProfile(user);
         return user;
     }

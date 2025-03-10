@@ -1,0 +1,16 @@
+{
+  "name": "John",
+  "bodyWeight": 125.0,
+  "bodyfatPercentage": 16.5,
+  "workoutHistory": [
+    {
+      "type": "Bench",
+      "name": "Bench",
+      "sets": 4,
+      "reps": 10,
+      "weight": 180.0,
+      "date": "2025-03-10"
+    }
+  ],
+  "goal": "Strength"
+}

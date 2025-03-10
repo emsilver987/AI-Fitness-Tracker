@@ -30,7 +30,6 @@ public class MenuSelection {
     public void profileMenuSelection() {
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
-        UserProfile userProfile = new UserProfile();
         switch (choice) {
             case 1 -> UserProfile.createUserProfile();
             case 2 -> {
