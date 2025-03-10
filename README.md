@@ -28,7 +28,7 @@ A Java-based console application that helps you log workouts, track progress, an
 
 ### 1. **Clone the Repository**
 ```bash
-git clone [https://github.com/yourusername/AIFitnessTracker.git]
+git clone [https://github.com/emsilver987/AI-Fitness-Tracker.git]
 cd AIFitnessTracker
 ```
 
