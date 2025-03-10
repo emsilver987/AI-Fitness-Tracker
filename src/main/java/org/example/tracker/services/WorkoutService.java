@@ -2,6 +2,7 @@ package org.example.tracker.services;
 import java.util.Scanner;
 import java.time.LocalDate;
 import static org.example.tracker.Main.workoutHistory;
+import org.example.tracker.models.Workout;
 
 public class WorkoutService {
     Scanner scanner = new Scanner(System.in);
@@ -23,7 +24,7 @@ public class WorkoutService {
         double weight = scanner.nextDouble();
         scanner.nextLine();
 
-        org.example.tracker.models.Workout workout = new org.example.tracker.models.Workout(type, name, sets, reps, weight, LocalDate.now());
+        Workout workout = new Workout(type, name, sets, reps, weight, LocalDate.now());
         workoutHistory.add(workout);
 
         System.out.println("Workout logged successfully!");
