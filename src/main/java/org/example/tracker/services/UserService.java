@@ -1,6 +1,6 @@
 package org.example.tracker.services;
 import org.example.tracker.models.User;
-import org.example.tracker.utils.UserProfile;
+
 import java.util.Scanner;
 
 import static org.example.tracker.Main.workoutHistory;

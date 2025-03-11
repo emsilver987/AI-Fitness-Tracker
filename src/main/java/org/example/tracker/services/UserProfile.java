@@ -1,4 +1,4 @@
-package org.example.tracker.utils;
+package org.example.tracker.services;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,9 +12,9 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import org.example.tracker.models.User;
+import org.example.tracker.utils.Adapter;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import static org.example.tracker.Main.workoutHistory;

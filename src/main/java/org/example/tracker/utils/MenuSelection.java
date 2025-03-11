@@ -1,5 +1,6 @@
 package org.example.tracker.utils;
 import org.example.tracker.ai.ReviewWorkout;
+import org.example.tracker.services.UserProfile;
 import org.example.tracker.services.WorkoutService;
 
 import java.util.Scanner;
